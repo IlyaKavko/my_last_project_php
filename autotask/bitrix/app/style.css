@@ -1,0 +1,85 @@
+.lirax-widget {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    max-width: 1300px;
+    /*height: 1000px;*/
+    background: url("data:image/svg+xml,%3Csvg width='106' height='1507' viewBox='0 0 106 1507' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.0974 0H106V1507H47C44.2386 1507 42 1504.76 42 1502V88.6384C47.2867 87.79 51.3254 83.2075 51.3254 77.6817C51.3254 72.1559 47.2867 67.5734 42 66.725V66.5843H33.2922C27.1632 66.5843 22.1948 61.6159 22.1948 55.4869C22.1948 49.358 27.1632 44.3895 33.2922 44.3895H42V44.2489C47.2867 43.4005 51.3254 38.818 51.3254 33.2922C51.3254 27.7663 47.2867 23.1838 42 22.3355V22.1948H11C4.91592 22.1425 0 17.1938 0 11.0974C0 5.00096 4.91592 0.0527178 11 0.000418434L11.0974 0Z' fill='%2337B1F1'/%3E%3C/svg%3E%0A") left top no-repeat;
+    padding-left: 106px;
+    margin: 20px auto;
+}
+
+.lirax-container {
+    max-width: 782px;
+    padding: 0 88px;
+    margin: 0 auto;
+}
+
+.lirax__block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 26px;
+    border-bottom: 1px solid #F2F0F0;
+}
+
+.lirax__header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.lirax__header-logo > img {
+    max-height: 30px;
+    margin-left: 18px;
+}
+
+.lirax__header-logo > img:last-of-type {
+    margin-right: 0;
+}
+
+
+@media (max-width: 575.98px) {
+    .lirax-widget {
+        font-size: 14px;
+        background: #fff;
+        padding-left: 0;
+    }
+
+    .lirax-widget:before {
+        content: none;
+    }
+
+    .lirax-container {
+        padding: 0 10px;
+    }
+
+    .lirax__block-header {
+        display: block;
+    }
+
+    .lirax__header-logo {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .lirax-widget {
+        padding-left: 0;
+        background: #fff;
+    }
+
+    .lirax-widget:before {
+        content: none;
+    }
+
+    .lirax-container {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .lirax-container {
+        padding: 0 40px;
+    }
+}
